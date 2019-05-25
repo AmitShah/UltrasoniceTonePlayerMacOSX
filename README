@@ -1,0 +1,12 @@
+you have to manually install the following dependencies :
+libfec
+libliquid-dsp
+libjasson
+libquiet
+libsndfile -- system default
+
+after installation include static lib items of each of the above in the bundle via Build Phases -> Link Binary With Libraries
+
+Ensure the header search path and the library search paths include the installation path for the header and static/dynamic libs (dylibs work fine in xcode but not so in unity when we bundle)
+
+ 
