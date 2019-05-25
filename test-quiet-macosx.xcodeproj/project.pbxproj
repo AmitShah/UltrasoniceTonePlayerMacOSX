@@ -1,0 +1,451 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F07C58F22990848006317CA /* libsndfile.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F40DE372298F6A3005E2150 /* libsndfile.1.dylib */; };
+		3F07C59F22992879006317CA /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3F985E222298B8E9003EC32F /* main.mm */; };
+		3F07C5A02299290A006317CA /* libfec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F985E322298E4B6003EC32F /* libfec.a */; };
+		3F07C5A42299290A006317CA /* libjansson.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F07C5A12299290A006317CA /* libjansson.a */; };
+		3F07C5A52299290A006317CA /* libliquid.ar in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F07C5A22299290A006317CA /* libliquid.ar */; };
+		3F07C5A62299290A006317CA /* libquiet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F07C5A32299290A006317CA /* libquiet.a */; };
+		3F07C5A82299293C006317CA /* libsndfile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F07C5A72299293C006317CA /* libsndfile.a */; };
+		3F07C5AA229935B3006317CA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F07C5A9229935B3006317CA /* AVFoundation.framework */; };
+		3F985E232298B8E9003EC32F /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3F985E222298B8E9003EC32F /* main.mm */; };
+		3F985E2F2298B95B003EC32F /* libjansson.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F985E2B2298B95B003EC32F /* libjansson.4.dylib */; };
+		3F985E312298B95B003EC32F /* libquiet.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F985E2D2298B95B003EC32F /* libquiet.dylib */; };
+		3F985E342298E58D003EC32F /* libfec.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F985E2A2298B95B003EC32F /* libfec.dylib */; };
+		3F985E352298E58D003EC32F /* libliquid.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F985E2C2298B95B003EC32F /* libliquid.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3F985E1D2298B8E9003EC32F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3F07C5942299283B006317CA /* test-quiet-macosx-bundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "test-quiet-macosx-bundle.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F07C5962299283B006317CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F07C5A12299290A006317CA /* libjansson.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjansson.a; path = ../../../../../../usr/local/lib/libjansson.a; sourceTree = "<group>"; };
+		3F07C5A22299290A006317CA /* libliquid.ar */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libliquid.ar; path = ../../../../../../usr/local/lib/libliquid.ar; sourceTree = "<group>"; };
+		3F07C5A32299290A006317CA /* libquiet.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libquiet.a; path = ../../../../../../usr/local/lib/libquiet.a; sourceTree = "<group>"; };
+		3F07C5A72299293C006317CA /* libsndfile.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsndfile.a; path = ../../../../../../usr/local/Cellar/libsndfile/1.0.28/lib/libsndfile.a; sourceTree = "<group>"; };
+		3F07C5A9229935B3006317CA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		3F40DE372298F6A3005E2150 /* libsndfile.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsndfile.1.dylib; path = ../../../../../../usr/local/Cellar/libsndfile/1.0.28/lib/libsndfile.1.dylib; sourceTree = "<group>"; };
+		3F985E1F2298B8E9003EC32F /* test-quiet-macosx */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "test-quiet-macosx"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F985E222298B8E9003EC32F /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		3F985E2A2298B95B003EC32F /* libfec.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfec.dylib; path = ../../../../../../usr/local/lib/libfec.dylib; sourceTree = "<group>"; };
+		3F985E2B2298B95B003EC32F /* libjansson.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libjansson.4.dylib; path = ../../../../../../usr/local/lib/libjansson.4.dylib; sourceTree = "<group>"; };
+		3F985E2C2298B95B003EC32F /* libliquid.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libliquid.dylib; path = ../../../../../../usr/local/lib/libliquid.dylib; sourceTree = "<group>"; };
+		3F985E2D2298B95B003EC32F /* libquiet.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libquiet.dylib; path = ../../../../../../usr/local/lib/libquiet.dylib; sourceTree = "<group>"; };
+		3F985E322298E4B6003EC32F /* libfec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfec.a; path = ../../../../../../usr/local/lib/libfec.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F07C5912299283B006317CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F07C5AA229935B3006317CA /* AVFoundation.framework in Frameworks */,
+				3F07C5A82299293C006317CA /* libsndfile.a in Frameworks */,
+				3F07C5A02299290A006317CA /* libfec.a in Frameworks */,
+				3F07C5A42299290A006317CA /* libjansson.a in Frameworks */,
+				3F07C5A52299290A006317CA /* libliquid.ar in Frameworks */,
+				3F07C5A62299290A006317CA /* libquiet.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F985E1C2298B8E9003EC32F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F07C58F22990848006317CA /* libsndfile.1.dylib in Frameworks */,
+				3F985E342298E58D003EC32F /* libfec.dylib in Frameworks */,
+				3F985E352298E58D003EC32F /* libliquid.dylib in Frameworks */,
+				3F985E2F2298B95B003EC32F /* libjansson.4.dylib in Frameworks */,
+				3F985E312298B95B003EC32F /* libquiet.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F07C5952299283B006317CA /* test-quiet-macosx-bundle */ = {
+			isa = PBXGroup;
+			children = (
+				3F07C5962299283B006317CA /* Info.plist */,
+			);
+			path = "test-quiet-macosx-bundle";
+			sourceTree = "<group>";
+		};
+		3F985E162298B8E9003EC32F = {
+			isa = PBXGroup;
+			children = (
+				3F985E212298B8E9003EC32F /* test-quiet-macosx */,
+				3F07C5952299283B006317CA /* test-quiet-macosx-bundle */,
+				3F985E202298B8E9003EC32F /* Products */,
+				3F985E292298B95B003EC32F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3F985E202298B8E9003EC32F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F985E1F2298B8E9003EC32F /* test-quiet-macosx */,
+				3F07C5942299283B006317CA /* test-quiet-macosx-bundle.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F985E212298B8E9003EC32F /* test-quiet-macosx */ = {
+			isa = PBXGroup;
+			children = (
+				3F985E222298B8E9003EC32F /* main.mm */,
+			);
+			path = "test-quiet-macosx";
+			sourceTree = "<group>";
+		};
+		3F985E292298B95B003EC32F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F07C5A9229935B3006317CA /* AVFoundation.framework */,
+				3F07C5A72299293C006317CA /* libsndfile.a */,
+				3F07C5A12299290A006317CA /* libjansson.a */,
+				3F07C5A22299290A006317CA /* libliquid.ar */,
+				3F07C5A32299290A006317CA /* libquiet.a */,
+				3F40DE372298F6A3005E2150 /* libsndfile.1.dylib */,
+				3F985E322298E4B6003EC32F /* libfec.a */,
+				3F985E2A2298B95B003EC32F /* libfec.dylib */,
+				3F985E2B2298B95B003EC32F /* libjansson.4.dylib */,
+				3F985E2C2298B95B003EC32F /* libliquid.dylib */,
+				3F985E2D2298B95B003EC32F /* libquiet.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F07C5932299283B006317CA /* test-quiet-macosx-bundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F07C5972299283B006317CA /* Build configuration list for PBXNativeTarget "test-quiet-macosx-bundle" */;
+			buildPhases = (
+				3F07C5902299283B006317CA /* Sources */,
+				3F07C5912299283B006317CA /* Frameworks */,
+				3F07C5922299283B006317CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "test-quiet-macosx-bundle";
+			productName = "test-quiet-macosx-bundle";
+			productReference = 3F07C5942299283B006317CA /* test-quiet-macosx-bundle.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		3F985E1E2298B8E9003EC32F /* test-quiet-macosx */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F985E262298B8E9003EC32F /* Build configuration list for PBXNativeTarget "test-quiet-macosx" */;
+			buildPhases = (
+				3F985E1B2298B8E9003EC32F /* Sources */,
+				3F985E1C2298B8E9003EC32F /* Frameworks */,
+				3F985E1D2298B8E9003EC32F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "test-quiet-macosx";
+			productName = "test-quiet-macosx";
+			productReference = 3F985E1F2298B8E9003EC32F /* test-quiet-macosx */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F985E172298B8E9003EC32F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Amit Shah";
+				TargetAttributes = {
+					3F07C5932299283B006317CA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					3F985E1E2298B8E9003EC32F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3F985E1A2298B8E9003EC32F /* Build configuration list for PBXProject "test-quiet-macosx" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3F985E162298B8E9003EC32F;
+			productRefGroup = 3F985E202298B8E9003EC32F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F985E1E2298B8E9003EC32F /* test-quiet-macosx */,
+				3F07C5932299283B006317CA /* test-quiet-macosx-bundle */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F07C5922299283B006317CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F07C5902299283B006317CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F07C59F22992879006317CA /* main.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F985E1B2298B8E9003EC32F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F985E232298B8E9003EC32F /* main.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3F07C5982299283B006317CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = N4UM38SSUJ;
+				HEADER_SEARCH_PATHS = /usr/local/include/;
+				INFOPLIST_FILE = "test-quiet-macosx-bundle/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/libsndfile/1.0.28/lib,
+					/usr/local/lib/,
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = QuietOSX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		3F07C5992299283B006317CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = N4UM38SSUJ;
+				HEADER_SEARCH_PATHS = /usr/local/include/;
+				INFOPLIST_FILE = "test-quiet-macosx-bundle/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/libsndfile/1.0.28/lib,
+					/usr/local/lib/,
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = QuietOSX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		3F985E242298B8E9003EC32F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		3F985E252298B8E9003EC32F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		3F985E272298B8E9003EC32F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N4UM38SSUJ;
+				HEADER_SEARCH_PATHS = /usr/local/include/;
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib/,
+					/usr/local/Cellar/libsndfile/1.0.28/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3F985E282298B8E9003EC32F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N4UM38SSUJ;
+				HEADER_SEARCH_PATHS = /usr/local/include/;
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib/,
+					/usr/local/Cellar/libsndfile/1.0.28/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F07C5972299283B006317CA /* Build configuration list for PBXNativeTarget "test-quiet-macosx-bundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F07C5982299283B006317CA /* Debug */,
+				3F07C5992299283B006317CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F985E1A2298B8E9003EC32F /* Build configuration list for PBXProject "test-quiet-macosx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F985E242298B8E9003EC32F /* Debug */,
+				3F985E252298B8E9003EC32F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F985E262298B8E9003EC32F /* Build configuration list for PBXNativeTarget "test-quiet-macosx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F985E272298B8E9003EC32F /* Debug */,
+				3F985E282298B8E9003EC32F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3F985E172298B8E9003EC32F /* Project object */;
+}
