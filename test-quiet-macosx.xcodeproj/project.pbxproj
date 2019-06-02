@@ -18,8 +18,6 @@
 		3F1E03E9229BB08D00351589 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F07C5A9229935B3006317CA /* AVFoundation.framework */; };
 		3F1E03EE229CD13100351589 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F1E03ED229CD13100351589 /* Cocoa.framework */; };
 		3F1E03EF229CE43A00351589 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F1E03ED229CD13100351589 /* Cocoa.framework */; };
-		3F1E03F3229D0B8D00351589 /* NamedPipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1E03F2229D0B8D00351589 /* NamedPipe.m */; };
-		3F1E03F4229D0B8D00351589 /* NamedPipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1E03F2229D0B8D00351589 /* NamedPipe.m */; };
 		3F1E03F7229D2FB300351589 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F1E03F5229D2F4100351589 /* CoreAudio.framework */; };
 		3F1E03F8229D2FF400351589 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F1E03F5229D2F4100351589 /* CoreAudio.framework */; };
 		3F1E0400229E6E7800351589 /* AVTonePlayerUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1E03FF229E6E7800351589 /* AVTonePlayerUnit.swift */; };
@@ -29,6 +27,8 @@
 		3F985E312298B95B003EC32F /* libquiet.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F985E2D2298B95B003EC32F /* libquiet.dylib */; };
 		3F985E342298E58D003EC32F /* libfec.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F985E2A2298B95B003EC32F /* libfec.dylib */; };
 		3F985E352298E58D003EC32F /* libliquid.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F985E2C2298B95B003EC32F /* libliquid.dylib */; };
+		3FDDBBD722A24A30007517CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDDBBD522A249F8007517CD /* Foundation.framework */; };
+		3FDDBBD822A24A3A007517CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDDBBD522A249F8007517CD /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -52,8 +52,6 @@
 		3F07C5A72299293C006317CA /* libsndfile.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsndfile.a; path = ../../../../../../usr/local/Cellar/libsndfile/1.0.28/lib/libsndfile.a; sourceTree = "<group>"; };
 		3F07C5A9229935B3006317CA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		3F1E03ED229CD13100351589 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		3F1E03F1229D0B8D00351589 /* NamedPipe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NamedPipe.h; sourceTree = "<group>"; };
-		3F1E03F2229D0B8D00351589 /* NamedPipe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NamedPipe.m; sourceTree = "<group>"; };
 		3F1E03F5229D2F4100351589 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		3F1E03FD229E6E7800351589 /* test-quiet-macosx-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "test-quiet-macosx-Bridging-Header.h"; sourceTree = "<group>"; };
 		3F1E03FE229E6E7800351589 /* test-quiet-macosx-bundle-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "test-quiet-macosx-bundle-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -66,6 +64,7 @@
 		3F985E2C2298B95B003EC32F /* libliquid.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libliquid.dylib; path = ../../../../../../usr/local/lib/libliquid.dylib; sourceTree = "<group>"; };
 		3F985E2D2298B95B003EC32F /* libquiet.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libquiet.dylib; path = ../../../../../../usr/local/lib/libquiet.dylib; sourceTree = "<group>"; };
 		3F985E322298E4B6003EC32F /* libfec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfec.a; path = ../../../../../../usr/local/lib/libfec.a; sourceTree = "<group>"; };
+		3FDDBBD522A249F8007517CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FDDBBD822A24A3A007517CD /* Foundation.framework in Frameworks */,
 				3F1E03F7229D2FB300351589 /* CoreAudio.framework in Frameworks */,
 				3F1E03EF229CE43A00351589 /* Cocoa.framework in Frameworks */,
 				3F1E03E8229BB07700351589 /* AVFoundation.framework in Frameworks */,
@@ -88,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FDDBBD722A24A30007517CD /* Foundation.framework in Frameworks */,
 				3F1E03F8229D2FF400351589 /* CoreAudio.framework in Frameworks */,
 				3F1E03EE229CD13100351589 /* Cocoa.framework in Frameworks */,
 				3F1E03E9229BB08D00351589 /* AVFoundation.framework in Frameworks */,
@@ -133,8 +134,6 @@
 			isa = PBXGroup;
 			children = (
 				3F985E222298B8E9003EC32F /* main.mm */,
-				3F1E03F1229D0B8D00351589 /* NamedPipe.h */,
-				3F1E03F2229D0B8D00351589 /* NamedPipe.m */,
 				3F1E03FF229E6E7800351589 /* AVTonePlayerUnit.swift */,
 				3F1E03FD229E6E7800351589 /* test-quiet-macosx-Bridging-Header.h */,
 				3F1E03FE229E6E7800351589 /* test-quiet-macosx-bundle-Bridging-Header.h */,
@@ -145,6 +144,7 @@
 		3F985E292298B95B003EC32F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3FDDBBD522A249F8007517CD /* Foundation.framework */,
 				3F1E03F5229D2F4100351589 /* CoreAudio.framework */,
 				3F1E03ED229CD13100351589 /* Cocoa.framework */,
 				3F07C5A9229935B3006317CA /* AVFoundation.framework */,
@@ -254,7 +254,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F07C59F22992879006317CA /* main.mm in Sources */,
-				3F1E03F4229D0B8D00351589 /* NamedPipe.m in Sources */,
 				3F1E0401229E6E7800351589 /* AVTonePlayerUnit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,7 +263,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F985E232298B8E9003EC32F /* main.mm in Sources */,
-				3F1E03F3229D0B8D00351589 /* NamedPipe.m in Sources */,
 				3F1E0400229E6E7800351589 /* AVTonePlayerUnit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

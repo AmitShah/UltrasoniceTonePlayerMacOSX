@@ -25,6 +25,7 @@
 #define EXPORT_API
 #endif
 
+
 static AVAudioEngine* engine;
 static AVAudioFormat * format;
 static AVTonePlayerUnit * tone;
@@ -151,7 +152,8 @@ static int encode_to_wav(const char *out_fname,
                   const quiet_encoder_options *opt) {
    
     
-    SNDFILE *wav = wav_open(out_fname, sample_rate);
+    //NSLog(@"stared:@%d", [NSDate timeIntervalSinceReferenceDate]);
+    //SNDFILE *wav = wav_open(out_fname, sample_rate);
     format =  [[AVAudioFormat alloc] initStandardFormatWithSampleRate: sample_rate channels: 1];
     engine = [[AVAudioEngine alloc] init];
     tone = [[AVTonePlayerUnit alloc] init];
@@ -170,10 +172,10 @@ static int encode_to_wav(const char *out_fname,
 //        payload[j] = rand() & 0xff;
 //    }
 
-    if (wav == NULL) {
-        printf("failed to open wav file for writing\n");
-        return 1;
-    }
+//    if (wav == NULL) {
+//        printf("failed to open wav file for writing\n");
+//        return 1;
+//    }
     
     quiet_encoder *e = quiet_encoder_create(opt, sample_rate);
     
@@ -198,7 +200,7 @@ static int encode_to_wav(const char *out_fname,
             if (written > 0) {
                 //NSLog(@"%.9f",*samplebuf);
                 //NSLog(@"Counter:%d",count++);
-                wav_write(wav, samplebuf, written);
+                //wav_write(wav, samplebuf, written);
                 AVAudioPCMBuffer* buffer =  create_buffer(samplebuf, written);
                 
                 //AVAudioPCMBuffer * buffer = create_buffer(samplebuf, samplebuf_len);
@@ -207,7 +209,7 @@ static int encode_to_wav(const char *out_fname,
                 [tone scheduleBuffer:buffer];
                 //[md appendBytes:<#(nonnull const void *)#> length:<#(NSUInteger)#>
                 
-
+                
                 
             }
         }
@@ -318,6 +320,23 @@ int main(int argc, const char * argv[])
     
     main2();
     //output_audio(Nil);
+    xpc_connection_t conn = xpc_connection_create_mach_service( "com.yourname.product.service", dispatch_get_main_queue(), XPC_CONNECTION_MACH_SERVICE_LISTENER );
+    xpc_connection_set_event_handler( conn, ^( xpc_object_t client ) {
+        
+        xpc_connection_set_event_handler( client, ^(xpc_object_t object) {
+            NSLog( @"received message: %s", xpc_copy_description( object ) );
+            
+            xpc_object_t reply = xpc_dictionary_create_reply( object );
+            xpc_dictionary_set_string( reply, "reply", "Back from the service" );
+            
+            xpc_connection_t remote = xpc_dictionary_get_remote_connection( object );
+            xpc_connection_send_message( remote, reply );
+        } );
+        
+        xpc_connection_resume( client );
+    }) ;
+    
+    xpc_connection_resume( conn );
     [NSApp run];
         
     
