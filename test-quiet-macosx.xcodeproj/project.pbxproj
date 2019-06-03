@@ -29,6 +29,8 @@
 		3F985E352298E58D003EC32F /* libliquid.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F985E2C2298B95B003EC32F /* libliquid.dylib */; };
 		3FDDBBD722A24A30007517CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDDBBD522A249F8007517CD /* Foundation.framework */; };
 		3FDDBBD822A24A3A007517CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDDBBD522A249F8007517CD /* Foundation.framework */; };
+		7581F90CA963E57E2B8918DF /* libPods-test-quiet-macosx-bundle.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37E27B1B0592ED3FB8159142 /* libPods-test-quiet-macosx-bundle.a */; };
+		BC7F177C255B01E861A24FCA /* libPods-test-quiet-macosx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F78A19B8FBD6CFE5C8974F3 /* libPods-test-quiet-macosx.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,6 +46,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1F78A19B8FBD6CFE5C8974F3 /* libPods-test-quiet-macosx.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-test-quiet-macosx.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		37E27B1B0592ED3FB8159142 /* libPods-test-quiet-macosx-bundle.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-test-quiet-macosx-bundle.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F07C5942299283B006317CA /* test-quiet-macosx-bundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "test-quiet-macosx-bundle.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F07C5962299283B006317CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F07C5A12299290A006317CA /* libjansson.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjansson.a; path = ../../../../../../usr/local/lib/libjansson.a; sourceTree = "<group>"; };
@@ -65,6 +69,11 @@
 		3F985E2D2298B95B003EC32F /* libquiet.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libquiet.dylib; path = ../../../../../../usr/local/lib/libquiet.dylib; sourceTree = "<group>"; };
 		3F985E322298E4B6003EC32F /* libfec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfec.a; path = ../../../../../../usr/local/lib/libfec.a; sourceTree = "<group>"; };
 		3FDDBBD522A249F8007517CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3FDDBBD922A34E02007517CD /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		4A16433737552E644EC807AB /* Pods-test-quiet-macosx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test-quiet-macosx.release.xcconfig"; path = "Target Support Files/Pods-test-quiet-macosx/Pods-test-quiet-macosx.release.xcconfig"; sourceTree = "<group>"; };
+		4FDA4BA17ADD02A345241EAB /* Pods-test-quiet-macosx-bundle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test-quiet-macosx-bundle.debug.xcconfig"; path = "Target Support Files/Pods-test-quiet-macosx-bundle/Pods-test-quiet-macosx-bundle.debug.xcconfig"; sourceTree = "<group>"; };
+		8BA667FACFFE1CB5B897E52A /* Pods-test-quiet-macosx-bundle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test-quiet-macosx-bundle.release.xcconfig"; path = "Target Support Files/Pods-test-quiet-macosx-bundle/Pods-test-quiet-macosx-bundle.release.xcconfig"; sourceTree = "<group>"; };
+		9E447D8D670058ADF6937056 /* Pods-test-quiet-macosx.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test-quiet-macosx.debug.xcconfig"; path = "Target Support Files/Pods-test-quiet-macosx/Pods-test-quiet-macosx.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +90,7 @@
 				3F07C5A42299290A006317CA /* libjansson.a in Frameworks */,
 				3F07C5A52299290A006317CA /* libliquid.ar in Frameworks */,
 				3F07C5A62299290A006317CA /* libquiet.a in Frameworks */,
+				7581F90CA963E57E2B8918DF /* libPods-test-quiet-macosx-bundle.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,12 +107,24 @@
 				3F985E352298E58D003EC32F /* libliquid.dylib in Frameworks */,
 				3F985E2F2298B95B003EC32F /* libjansson.4.dylib in Frameworks */,
 				3F985E312298B95B003EC32F /* libquiet.dylib in Frameworks */,
+				BC7F177C255B01E861A24FCA /* libPods-test-quiet-macosx.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		317EF0CD6179E319D7776873 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E447D8D670058ADF6937056 /* Pods-test-quiet-macosx.debug.xcconfig */,
+				4A16433737552E644EC807AB /* Pods-test-quiet-macosx.release.xcconfig */,
+				4FDA4BA17ADD02A345241EAB /* Pods-test-quiet-macosx-bundle.debug.xcconfig */,
+				8BA667FACFFE1CB5B897E52A /* Pods-test-quiet-macosx-bundle.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		3F07C5952299283B006317CA /* test-quiet-macosx-bundle */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +140,7 @@
 				3F07C5952299283B006317CA /* test-quiet-macosx-bundle */,
 				3F985E202298B8E9003EC32F /* Products */,
 				3F985E292298B95B003EC32F /* Frameworks */,
+				317EF0CD6179E319D7776873 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -133,6 +156,7 @@
 		3F985E212298B8E9003EC32F /* test-quiet-macosx */ = {
 			isa = PBXGroup;
 			children = (
+				3FDDBBD922A34E02007517CD /* Podfile */,
 				3F985E222298B8E9003EC32F /* main.mm */,
 				3F1E03FF229E6E7800351589 /* AVTonePlayerUnit.swift */,
 				3F1E03FD229E6E7800351589 /* test-quiet-macosx-Bridging-Header.h */,
@@ -158,6 +182,8 @@
 				3F985E2B2298B95B003EC32F /* libjansson.4.dylib */,
 				3F985E2C2298B95B003EC32F /* libliquid.dylib */,
 				3F985E2D2298B95B003EC32F /* libquiet.dylib */,
+				1F78A19B8FBD6CFE5C8974F3 /* libPods-test-quiet-macosx.a */,
+				37E27B1B0592ED3FB8159142 /* libPods-test-quiet-macosx-bundle.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -169,6 +195,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F07C5972299283B006317CA /* Build configuration list for PBXNativeTarget "test-quiet-macosx-bundle" */;
 			buildPhases = (
+				38CB7F2F7523C17629243EFA /* [CP] Check Pods Manifest.lock */,
 				3F07C5902299283B006317CA /* Sources */,
 				3F07C5912299283B006317CA /* Frameworks */,
 				3F07C5922299283B006317CA /* Resources */,
@@ -186,6 +213,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F985E262298B8E9003EC32F /* Build configuration list for PBXNativeTarget "test-quiet-macosx" */;
 			buildPhases = (
+				48F91160A681A41E0766A14B /* [CP] Check Pods Manifest.lock */,
 				3F985E1B2298B8E9003EC32F /* Sources */,
 				3F985E1C2298B8E9003EC32F /* Frameworks */,
 				3F985E1D2298B8E9003EC32F /* CopyFiles */,
@@ -248,6 +276,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		38CB7F2F7523C17629243EFA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-test-quiet-macosx-bundle-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		48F91160A681A41E0766A14B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-test-quiet-macosx-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3F07C5902299283B006317CA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -272,12 +339,16 @@
 /* Begin XCBuildConfiguration section */
 		3F07C5982299283B006317CA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FDA4BA17ADD02A345241EAB /* Pods-test-quiet-macosx-bundle.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = N4UM38SSUJ;
-				HEADER_SEARCH_PATHS = /usr/local/include/;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/,
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = "test-quiet-macosx-bundle/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
@@ -299,12 +370,16 @@
 		};
 		3F07C5992299283B006317CA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BA667FACFFE1CB5B897E52A /* Pods-test-quiet-macosx-bundle.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = N4UM38SSUJ;
-				HEADER_SEARCH_PATHS = /usr/local/include/;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/,
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = "test-quiet-macosx-bundle/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
@@ -428,16 +503,22 @@
 		};
 		3F985E272298B8E9003EC32F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E447D8D670058ADF6937056 /* Pods-test-quiet-macosx.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N4UM38SSUJ;
-				HEADER_SEARCH_PATHS = /usr/local/include/;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/,
+					"$(inherited)",
+				);
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					/usr/local/lib/,
 					/usr/local/Cellar/libsndfile/1.0.28/lib,
+					"$(inherited)",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "test-quiet-macosx/test-quiet-macosx-Bridging-Header.h";
@@ -448,16 +529,22 @@
 		};
 		3F985E282298B8E9003EC32F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A16433737552E644EC807AB /* Pods-test-quiet-macosx.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N4UM38SSUJ;
-				HEADER_SEARCH_PATHS = /usr/local/include/;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/,
+					"$(inherited)",
+				);
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					/usr/local/lib/,
 					/usr/local/Cellar/libsndfile/1.0.28/lib,
+					"$(inherited)",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "test-quiet-macosx/test-quiet-macosx-Bridging-Header.h";
