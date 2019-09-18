@@ -251,9 +251,11 @@ int main(int argc, const char * argv[])
                                  size_t payload_len = 4;
                                  uint8_t payload[] = {104,101,108,108};
                                  NSString* d = [request.query objectForKey:@"payload"];
-                                 NSLog(@"%@",d);
-                                 
+                                 //NSLog(@"%@",d);
+                                 //[textView insertText: [@"" stringByAppendingFormat:
+                                 //                       @" Scheduled AUdio Output: %@\n", d]];
                                  encode_to_audio((uint8_t*)[d UTF8String], [d length]  );
+                                
                                  return [GCDWebServerDataResponse responseWithHTML:@"<html><body><p>Hello World</p></body></html>"];
                                  
                              }];

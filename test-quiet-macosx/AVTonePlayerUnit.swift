@@ -50,7 +50,8 @@ class AVTonePlayerUnit: AVAudioPlayerNode {
     
     func scheduleBuffer() {
         let buffer = prepareBuffer()
-        self.scheduleBuffer(buffer) {
+        self.scheduleBuffer(buffer)
+        {
             if self.isPlaying {
                 NSLog("Done playing");
                 //self.scheduleBuffer()
@@ -67,7 +68,7 @@ class AVTonePlayerUnit: AVAudioPlayerNode {
     
     func scheduleBuffer(_ buffer:AVAudioPCMBuffer){
         //let buffer = self.toPCMBuffer(data:data)
-        self.scheduleBuffer(buffer)
+        super.scheduleBuffer(buffer)
             {
                 if self.isPlaying {
                     NSLog("Done playing buffer");

@@ -69,7 +69,7 @@
 		3F985E2D2298B95B003EC32F /* libquiet.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libquiet.dylib; path = ../../../../../../usr/local/lib/libquiet.dylib; sourceTree = "<group>"; };
 		3F985E322298E4B6003EC32F /* libfec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfec.a; path = ../../../../../../usr/local/lib/libfec.a; sourceTree = "<group>"; };
 		3FDDBBD522A249F8007517CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		3FDDBBD922A34E02007517CD /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		3FDDBBD922A34E02007517CD /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4A16433737552E644EC807AB /* Pods-test-quiet-macosx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test-quiet-macosx.release.xcconfig"; path = "Target Support Files/Pods-test-quiet-macosx/Pods-test-quiet-macosx.release.xcconfig"; sourceTree = "<group>"; };
 		4FDA4BA17ADD02A345241EAB /* Pods-test-quiet-macosx-bundle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test-quiet-macosx-bundle.debug.xcconfig"; path = "Target Support Files/Pods-test-quiet-macosx-bundle/Pods-test-quiet-macosx-bundle.debug.xcconfig"; sourceTree = "<group>"; };
 		8BA667FACFFE1CB5B897E52A /* Pods-test-quiet-macosx-bundle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test-quiet-macosx-bundle.release.xcconfig"; path = "Target Support Files/Pods-test-quiet-macosx-bundle/Pods-test-quiet-macosx-bundle.release.xcconfig"; sourceTree = "<group>"; };
@@ -344,7 +344,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = N4UM38SSUJ;
+				DEVELOPMENT_TEAM = 47B98SWP2P;
 				HEADER_SEARCH_PATHS = (
 					/usr/local/include/,
 					"$(inherited)",
@@ -375,7 +375,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = N4UM38SSUJ;
+				DEVELOPMENT_TEAM = 47B98SWP2P;
 				HEADER_SEARCH_PATHS = (
 					/usr/local/include/,
 					"$(inherited)",
@@ -508,7 +508,7 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N4UM38SSUJ;
+				DEVELOPMENT_TEAM = 47B98SWP2P;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				HEADER_SEARCH_PATHS = (
 					/usr/local/include/,
@@ -534,7 +534,7 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N4UM38SSUJ;
+				DEVELOPMENT_TEAM = 47B98SWP2P;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				HEADER_SEARCH_PATHS = (
 					/usr/local/include/,
